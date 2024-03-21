@@ -3,16 +3,15 @@ import LeftSideBar from './LeftSideBar'
 import RightSideBar from './RightSideBar'
 import Feed from './Feed'
 
-const Home= () => {
+const Home = () => {
   return (
-    <div className=' bg-black h-screen'>
-        <div className='flex w-[80%] h-full mx-auto justify-between'>
-        <LeftSideBar/>
+    <div className=" bg-black h-screen">
+      <div className="flex w-[80%] h-full mx-auto justify-between">
+        <LeftSideBar className="w-[30%]" />
 
-<Feed/>
-<RightSideBar/>
-        </div>
-
+        <Feed />
+        <RightSideBar className="w-[20%]" />
+      </div>
     </div>
   )
 }
