@@ -5,11 +5,12 @@ import Feed from './Feed'
 
 const Home= () => {
   return (
-    <div className=' bg-black'>
+    <div className=' bg-black h-screen'>
         <div className='flex w-[80%] h-full mx-auto justify-between'>
         <LeftSideBar/>
-<RightSideBar/>
+
 <Feed/>
+<RightSideBar/>
         </div>
 
     </div>
