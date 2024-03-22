@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from './Home';
-import Login from './Login';
-import Feed from './Feed';
-import Profile from './profile';
+import Home from './Home'
+import Login from './Login'
+import Feed from './Feed'
+import Profile from './profile'
 
 const Body = () => {
   return (
@@ -17,7 +17,7 @@ const Body = () => {
         <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
-  );
-};
+  )
+}
 
-export default Body;
+export default Body
