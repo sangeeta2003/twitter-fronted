@@ -5,7 +5,7 @@ import { FaRegComment } from 'react-icons/fa'
 import { BsBookmark } from 'react-icons/bs'
 const Tweet = () => {
   return (
-    <div className='border-b border-gray-800'>
+    <div className="border-b border-gray-800">
       <div>
         <div className="flex gap-2 ml-3 p-4 ">
           <Avatar
@@ -13,7 +13,7 @@ const Tweet = () => {
             size="40"
             round={true}
           />
-          <div className='w-full'>
+          <div className="w-full">
             <div className="flex gap-2">
               <h1 className="font-bold text-white">Sangeeta</h1>
               <p className="text-gray-500 text-sm">@sangeeta . 2h</p>
@@ -24,15 +24,15 @@ const Tweet = () => {
             <div className="flex justify-between mt-3">
               <div className="text-white flex items-center hover:text-blue-300 rounded-full cursor-pointer">
                 <FaRegComment size="20px" />
-                <p className='ml-1'>0</p>
-              </div>    
-              <div className='flex items-center hover:text-[#F472B6]-600 cursor-pointer'>
+                <p className="ml-1">0</p>
+              </div>
+              <div className="flex items-center hover:text-[#F472B6]-600 cursor-pointer">
                 <FcLikePlaceholder size="20px" />
-                <p className='ml-1 text-white'>0</p>
+                <p className="ml-1 text-white">0</p>
               </div>
               <div className="text-white flex items-center hover:text-green-600 cursor-pointer">
                 <BsBookmark size="20px" />
-                <p className='ml-1'>0</p>
+                <p className="ml-1">0</p>
               </div>
             </div>
           </div>
