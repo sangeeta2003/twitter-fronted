@@ -1,6 +1,7 @@
 import React from 'react'
 import Avatar from 'react-avatar'
 import { BsCardImage } from 'react-icons/bs'
+
 const Post = () => {
   return (
     <div className="w-[100%] border-b border-gray-800  ">
@@ -28,7 +29,7 @@ const Post = () => {
           </div>
           <div className="flex items-center justify-between p-4 ">
             <div>
-              <BsCardImage className="text-[#1D98F0] mt-5 ml-10" size="20px"/>
+              <BsCardImage className="text-[#1D98F0] mt-5 ml-10" size="20px" />
             </div>
             <button className="bg-[#1D98F0] px-4 py-1 text-lg text-white text-right border-none rounded-full">
               Post
