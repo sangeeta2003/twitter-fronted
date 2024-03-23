@@ -21,19 +21,21 @@ const Login = () => {
           <div className="my-5 ">
             <h1 className="font-bold text-7xl ">Happening now</h1>
           </div>
-          <h1 className="font-bold text-3xl mt-8 mb-2">Join today.</h1>
+          <h1 className="font-bold text-3xl mt-8 mb-2">
+            {isLogin ? 'Login' : 'Signup'}
+          </h1>
           <form className="flex flex-col w-[50%] mt-5">
             {!isLogin && (
               <>
                 <input
                   type="text"
                   placeholder="Name"
-                  className="outline-blue-200 border border-gray-200 px-3 py-2 rounded-full my-1 font-semibold"
+                  className="outline-blue-200 text-black border border-gray-200 px-3 py-2 rounded-full my-1 font-semibold"
                 />
                 <input
                   type="text"
                   placeholder="Username"
-                  className="outline-blue-200 border border-gray-200 px-3 py-2 rounded-full my-1 font-semibold"
+                  className="outline-blue-200 text-black border border-gray-200 px-3 py-2 rounded-full my-1 font-semibold"
                 />
               </>
             )}
@@ -41,15 +43,15 @@ const Login = () => {
             <input
               type="text"
               placeholder="Email"
-              className="outline-blue-200 border border-gray-200 px-3 py-1 rounded-full my-1 font-semibold"
+              className="outline-blue-200 text-black border border-gray-200 px-3 py-1 rounded-full my-1 font-semibold"
             />
             <input
               type="text"
               placeholder="Password"
-              className="outline-blue-200 border border-gray-200 px-3 py-1 rounded-full my-1 font-semibold"
+              className="outline-blue-200 border text-black border-gray-200 px-3 py-1 rounded-full my-1 font-semibold"
             />
             <button className="bg-[#1098F0] border-none text-lg py-1 px-3 mt-4 font-bold justify-center text-white rounded-full my-1">
-              Create account
+            {isLogin ? 'Login' : 'Create Account'}
             </button>
             <h1 className="font-bold mt-5">
               {isLogin
@@ -59,7 +61,7 @@ const Login = () => {
                 onClick={loginhandler}
                 className="font-bold text-blue-500 cursor-pointer"
               >
-                {isLogin ? 'signup' : 'Login'}
+                {isLogin ? 'Signup' : 'Login'}
               </span>
             </h1>
           </form>
