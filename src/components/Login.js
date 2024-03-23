@@ -51,7 +51,7 @@ const Login = () => {
               className="outline-blue-200 border text-black border-gray-200 px-3 py-1 rounded-full my-1 font-semibold"
             />
             <button className="bg-[#1098F0] border-none text-lg py-1 px-3 mt-4 font-bold justify-center text-white rounded-full my-1">
-            {isLogin ? 'Login' : 'Create Account'}
+              {isLogin ? 'Login' : 'Create Account'}
             </button>
             <h1 className="font-bold mt-5">
               {isLogin
